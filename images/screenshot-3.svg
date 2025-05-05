@@ -1,0 +1,46 @@
+<svg viewBox="0 0 220 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Phone frame -->
+  <rect x="0" y="0" width="220" height="400" rx="20" fill="#333" />
+  <rect x="10" y="10" width="200" height="380" rx="10" fill="#fff" />
+  
+  <!-- App header -->
+  <rect x="10" y="10" width="200" height="60" rx="10" fill="#2e86de" />
+  <text x="30" y="45" font-family="Arial" font-size="16" fill="#fff">Patient Photos</text>
+  
+  <!-- Patient info -->
+  <rect x="20" y="80" width="180" height="40" rx="5" fill="#f9f9f9" />
+  <text x="30" y="105" font-family="Arial" font-size="14" fill="#333">John Smith - Visit #3</text>
+  
+  <!-- Gallery grid -->
+  <rect x="20" y="130" width="85" height="70" rx="5" fill="#f5f5f5" />
+  <rect x="115" y="130" width="85" height="70" rx="5" fill="#f5f5f5" />
+  <rect x="20" y="210" width="85" height="70" rx="5" fill="#f5f5f5" />
+  <rect x="115" y="210" width="85" height="70" rx="5" fill="#f5f5f5" />
+  <rect x="20" y="290" width="85" height="70" rx="5" fill="#f5f5f5" />
+  <rect x="115" y="290" width="85" height="70" rx="5" fill="#f5f5f5" />
+  
+  <!-- Labels -->
+  <rect x="20" y="130" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+  <text x="25" y="145" font-family="Arial" font-size="10" fill="#fff">I/O Upper</text>
+  
+  <rect x="115" y="130" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+  <text x="120" y="145" font-family="Arial" font-size="10" fill="#fff">I/O Lower</text>
+  
+  <rect x="20" y="210" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+  <text x="25" y="225" font-family="Arial" font-size="10" fill="#fff">I/O Right</text>
+  
+  <rect x="115" y="210" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+  <text x="120" y="225" font-family="Arial" font-size="10" fill="#fff">I/O Left</text>
+  
+  <rect x="20" y="290" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+  <text x="25" y="305" font-family="Arial" font-size="10" fill="#fff">E/O Front</text>
+  
+  <rect x="115" y="290" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+  <text x="120" y="305" font-family="Arial" font-size="10" fill="#fff">E/O Side</text>
+  
+  <!-- Bottom navigation -->
+  <rect x="10" y="350" width="200" height="40" rx="10" fill="#f5f5f5" />
+  <circle cx="50" cy="370" r="10" fill="#ccc" />
+  <circle cx="110" cy="370" r="10" fill="#ccc" />
+  <circle cx="170" cy="370" r="10" fill="#2e86de" />
+</svg>

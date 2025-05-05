@@ -1,0 +1,114 @@
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Screenshot 1: Patient List -->
+  <g transform="translate(50, 50)">
+    <!-- Phone frame -->
+    <rect x="0" y="0" width="220" height="400" rx="20" fill="#333" />
+    <rect x="10" y="10" width="200" height="380" rx="10" fill="#fff" />
+    
+    <!-- App header -->
+    <rect x="10" y="10" width="200" height="60" rx="10" fill="#2e86de" />
+    <text x="30" y="45" font-family="Arial" font-size="16" fill="#fff">Patient List</text>
+    
+    <!-- Search bar -->
+    <rect x="20" y="80" width="180" height="30" rx="15" fill="#f5f5f5" />
+    <text x="40" y="100" font-family="Arial" font-size="12" fill="#999">Search patients...</text>
+    
+    <!-- Patient items -->
+    <rect x="20" y="120" width="180" height="60" rx="5" fill="#f9f9f9" />
+    <circle cx="45" cy="150" r="15" fill="#ddd" />
+    <rect x="70" y="135" width="80" height="10" rx="2" fill="#333" />
+    <rect x="70" y="155" width="120" height="6" rx="2" fill="#999" />
+    
+    <rect x="20" y="190" width="180" height="60" rx="5" fill="#f9f9f9" />
+    <circle cx="45" cy="220" r="15" fill="#ddd" />
+    <rect x="70" y="205" width="100" height="10" rx="2" fill="#333" />
+    <rect x="70" y="225" width="120" height="6" rx="2" fill="#999" />
+    
+    <rect x="20" y="260" width="180" height="60" rx="5" fill="#f9f9f9" />
+    <circle cx="45" cy="290" r="15" fill="#ddd" />
+    <rect x="70" y="275" width="90" height="10" rx="2" fill="#333" />
+    <rect x="70" y="295" width="120" height="6" rx="2" fill="#999" />
+    
+    <!-- Bottom navigation -->
+    <rect x="10" y="350" width="200" height="40" rx="10" fill="#f5f5f5" />
+    <circle cx="50" cy="370" r="10" fill="#2e86de" />
+    <circle cx="110" cy="370" r="10" fill="#ccc" />
+    <circle cx="170" cy="370" r="10" fill="#ccc" />
+  </g>
+  
+  <!-- Screenshot 2: Camera View -->
+  <g transform="translate(340, 50)">
+    <!-- Phone frame -->
+    <rect x="0" y="0" width="220" height="400" rx="20" fill="#333" />
+    <rect x="10" y="10" width="200" height="380" rx="10" fill="#111" />
+    
+    <!-- Camera view -->
+    <rect x="10" y="40" width="200" height="280" rx="0" fill="#444" />
+    
+    <!-- Tooth guides overlay -->
+    <path d="M60 120 Q110 80 160 120 Q180 150 160 200 Q130 250 110 250 Q90 250 60 200 Q40 150 60 120" stroke="#fff" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+    
+    <!-- Camera controls -->
+    <rect x="10" y="320" width="200" height="70" rx="10" fill="#222" />
+    <circle cx="110" cy="355" r="25" stroke="#fff" stroke-width="3" fill="none" />
+    <circle cx="110" cy="355" r="20" fill="#2e86de" />
+    
+    <circle cx="50" cy="355" r="15" stroke="#fff" stroke-width="2" fill="none" />
+    <circle cx="170" cy="355" r="15" stroke="#fff" stroke-width="2" fill="none" />
+    
+    <!-- Top controls -->
+    <rect x="10" y="10" width="200" height="30" rx="0" fill="#222" />
+    <circle cx="40" cy="25" r="8" fill="#ccc" />
+    <circle cx="70" cy="25" r="8" fill="#2e86de" />
+    <rect x="100" y="20" width="40" height="10" rx="5" fill="#ccc" />
+    <circle cx="170" cy="25" r="8" fill="#ccc" />
+  </g>
+  
+  <!-- Screenshot 3: Photo Gallery -->
+  <g transform="translate(630, 50)">
+    <!-- Phone frame -->
+    <rect x="0" y="0" width="220" height="400" rx="20" fill="#333" />
+    <rect x="10" y="10" width="200" height="380" rx="10" fill="#fff" />
+    
+    <!-- App header -->
+    <rect x="10" y="10" width="200" height="60" rx="10" fill="#2e86de" />
+    <text x="30" y="45" font-family="Arial" font-size="16" fill="#fff">Patient Photos</text>
+    
+    <!-- Patient info -->
+    <rect x="20" y="80" width="180" height="40" rx="5" fill="#f9f9f9" />
+    <text x="30" y="105" font-family="Arial" font-size="14" fill="#333">John Smith - Visit #3</text>
+    
+    <!-- Gallery grid -->
+    <rect x="20" y="130" width="85" height="70" rx="5" fill="#f5f5f5" />
+    <rect x="115" y="130" width="85" height="70" rx="5" fill="#f5f5f5" />
+    <rect x="20" y="210" width="85" height="70" rx="5" fill="#f5f5f5" />
+    <rect x="115" y="210" width="85" height="70" rx="5" fill="#f5f5f5" />
+    <rect x="20" y="290" width="85" height="70" rx="5" fill="#f5f5f5" />
+    <rect x="115" y="290" width="85" height="70" rx="5" fill="#f5f5f5" />
+    
+    <!-- Labels -->
+    <rect x="20" y="130" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+    <text x="25" y="145" font-family="Arial" font-size="10" fill="#fff">I/O Upper</text>
+    
+    <rect x="115" y="130" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+    <text x="120" y="145" font-family="Arial" font-size="10" fill="#fff">I/O Lower</text>
+    
+    <rect x="20" y="210" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+    <text x="25" y="225" font-family="Arial" font-size="10" fill="#fff">I/O Right</text>
+    
+    <rect x="115" y="210" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+    <text x="120" y="225" font-family="Arial" font-size="10" fill="#fff">I/O Left</text>
+    
+    <rect x="20" y="290" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+    <text x="25" y="305" font-family="Arial" font-size="10" fill="#fff">E/O Front</text>
+    
+    <rect x="115" y="290" width="40" height="20" rx="3" fill="rgba(46, 134, 222, 0.8)" />
+    <text x="120" y="305" font-family="Arial" font-size="10" fill="#fff">E/O Side</text>
+    
+    <!-- Bottom navigation -->
+    <rect x="10" y="350" width="200" height="40" rx="10" fill="#f5f5f5" />
+    <circle cx="50" cy="370" r="10" fill="#ccc" />
+    <circle cx="110" cy="370" r="10" fill="#ccc" />
+    <circle cx="170" cy="370" r="10" fill="#2e86de" />
+  </g>
+</svg>
