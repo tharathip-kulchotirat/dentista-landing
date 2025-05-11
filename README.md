@@ -14,10 +14,6 @@ Dentista Photo provides a streamlined platform for dental professionals to docum
 - Patient case management and organization
 - Before/after treatment comparisons
 - Secure image storage and backup
-- Patient consultation tools
-- Treatment planning visualization
-- Integration with dental practice management systems
-- Image annotation and measurement tools
 
 ## Download
 
