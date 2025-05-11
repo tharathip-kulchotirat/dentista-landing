@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dentista Photo - Professional Dental Photography App</title>
-    <meta name="description" content="Dentista Photo - The ultimate dental photography app for dentists. Capture high-quality intraoral & extraoral photos, organize patient records, and sync with Google Drive. Professional dental photography made simple. Download now!">
+    <meta name="description" content="Dentista Photo - The ultimate dental photography app for dentists. Capture high-quality intraoral & extraoral photos, organize patient records, and sync with Cloud Storage. Professional dental photography made simple.">
     
     <!-- Favicon -->
-    <link rel="icon" href="images/icon-no-bg.png" type="image/svg+xml">
+    <link rel="icon" href="images/icon-no-bg.png" type="image/png">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Using modern loading method -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -22,20 +22,20 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header id="header">
         <div class="container">
             <div class="header-left">
                 <a href="" class="logo">
                     <img src="images/icon-no-bg.png" alt="Dentista Photo Logo" width="60" height="60">
                     <div class="logo-text">
-                    <h1>
-                        <span style="color: #1e88e5;">Dentista</span><span style="color: #0057c1;"> Photo</span>
-                    </h1>
-                    <p style="color: #616161;">Your dental photography companion</p>
+                        <h1>
+                            <span class="primary-text">Dentista</span><span class="secondary-text"> Photo</span>
+                        </h1>
+                        <p class="tagline">Your dental photography companion</p>
                     </div>
                 </a>
             </div>
-            <nav>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#screenshots">Screenshots</a></li>
@@ -44,8 +44,26 @@
                     <li><a href="terms-of-service.html">Terms</a></li>
                 </ul>
             </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="container">
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="privacy-policy.html">Privacy</a></li>
+                <li><a href="terms-of-service.html">Terms</a></li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -58,17 +76,23 @@
                     </div>
                     <!-- Space -->
                     <div class="space"></div>
-                    <h1>Professional Dental Photography Made Simple</h1>
-                    <p>Dentista Photo is the ultimate dental photography app designed specifically for dentists. Capture high-quality intraoral and extraoral photos, organize patient records, and synchronize with Google Drive - all in one seamless app.</p>
+                    <h2 class="hero-title">Professional Dental Photography Made Simple</h2>
+                    <p class="hero-description">Dentista Photo is the ultimate dental photography app designed specifically for dentists. Capture high-quality intraoral and extraoral photos, organize patient records, and synchronize with Cloud Storage - all in one seamless app.</p>
                     <div class="hero-buttons">
-                        <a href="#download" class="btn">Download Now</a>
-                        <a href="#features" class="btn btn-secondary">Learn More</a>
+                        <a href="#download" class="btn btn-primary">Download Now</a>
+                        <a href="#features" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="images/mock/io-mock.png" alt="Dentista Photo App Camera Interface", height="600">
+                    <img src="images/mock/io-mock.png" alt="Dentista Photo App Camera Interface" height="600">
                 </div>
             </div>
+        </div>
+        <!-- Decorative Wave Shape -->
+        <div class="wave-shape">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
         </div>
     </section>
 
@@ -81,7 +105,7 @@
             </div>
             
             <div class="features-grid">
-                <div class="feature-item">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="feature-icon">
                         <i class="fas fa-camera"></i>
                     </div>
@@ -89,7 +113,7 @@
                     <p>Professional camera interface with guided photography and overlay frames for consistent, high-quality dental photos.</p>
                 </div>
                 
-                <div class="feature-item">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="feature-icon">
                         <i class="fas fa-tooth"></i>
                     </div>
@@ -97,7 +121,7 @@
                     <p>Dedicated capture modes for I/O Upper, Lower, Right, Left, Front, and E/O Front, Left, Right views.</p>
                 </div>
                 
-                <div class="feature-item">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="feature-icon">
                         <i class="fas fa-folder-open"></i>
                     </div>
@@ -105,15 +129,15 @@
                     <p>Organize patients by name and hospital number. Track visits and maintain comprehensive photo records.</p>
                 </div>
                 
-                <div class="feature-item">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                     <div class="feature-icon">
                         <i class="fab fa-google-drive"></i>
                     </div>
-                    <h3>Google Drive Integration</h3>
-                    <p>Seamless synchronization with Google Drive for automatic backup and access across devices.</p>
+                    <h3>Cloud Storage Integration</h3>
+                    <p>Seamless synchronization with Cloud Storage for automatic backup and access across devices.</p>
                 </div>
                 
-                <div class="feature-item">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
                     <div class="feature-icon">
                         <i class="fas fa-wifi"></i>
                     </div>
@@ -121,12 +145,12 @@
                     <p>Work even without internet connection. Photos sync automatically when connection is restored.</p>
                 </div>
                 
-                <div class="feature-item">
+                <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
                     <div class="feature-icon">
                         <i class="fas fa-lock"></i>
                     </div>
                     <h3>Secure Data Storage</h3>
-                    <p>All patient data is securely stored in your own Google Drive account, giving you complete control.</p>
+                    <p>All patient data is securely stored in your own Cloud Storage account, giving you complete control.</p>
                 </div>
             </div>
         </div>
@@ -140,22 +164,86 @@
                 <p>See Dentista Photo in action with our intuitive user interface</p>
             </div>
             
-            <div class="screenshots-container">
+            <div class="screenshots-slider">
                 <div class="screenshot">
                     <img src="images/mock/home-screen-portrait.png" alt="Home Screen">
+                    <div class="screenshot-caption">Home Dashboard</div>
                 </div>
                 <div class="screenshot">
                     <img src="images/mock/patient-list-mock.png" alt="Patient List Screen">
+                    <div class="screenshot-caption">Patient Records</div>
                 </div>
                 <div class="screenshot">
                     <img src="images/mock/gallery-mock.png" alt="Photo Gallery">
+                    <div class="screenshot-caption">Photo Gallery</div>
                 </div>
                 <div class="screenshot">
                     <img src="images/mock/face-mock.png" alt="Camera Interface">
+                    <div class="screenshot-caption">Extraoral Photography</div>
                 </div>
+            </div>
+            
+            <div class="slider-navigation">
+                <button class="slider-prev" aria-label="Previous screenshot">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-dots"></div>
+                <button class="slider-next" aria-label="Next screenshot">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
         </div>
     </section>
+
+    <!-- Testimonials Section
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Dentists Say</h2>
+                <p>Trusted by dental professionals worldwide</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Dentista Photo has revolutionized how I document patient cases. The specialized dental modes make capturing consistent photos so much easier."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Dr. Sarah Johnson</h4>
+                            <p>Orthodontist, Boston</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The Cloud Storage integration is a game-changer. I can access my patient photos from my clinic computer without any hassle. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Dr. Michael Chen</h4>
+                            <p>Periodontist, Seattle</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As someone who previously struggled with dental photography, this app has been a lifesaver. The guided frames ensure I get perfect shots every time."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Dr. Ana Rodriguez</h4>
+                            <p>General Dentist, Miami</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-dots"></div>
+        </div>
+    </section> -->
 
     <!-- Download Section -->
     <section id="download" class="section download">
@@ -183,6 +271,13 @@
                 </div>
             </div>
         </div>
+        
+        <!-- CTA Bottom Wave Shape -->
+        <div class="wave-shape-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#2c3e50" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,197.3C384,203,480,149,576,149.3C672,149,768,203,864,208C960,213,1056,171,1152,149.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -192,6 +287,12 @@
                 <div class="footer-about">
                     <div class="footer-logo">Dentista<span> Photo</span></div>
                     <p>Professional dental photography application for dentists. Capture, organize, and manage patient photos with ease.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/tharathip-kulchotirat-3b83791a7/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-links">
@@ -199,6 +300,7 @@
                     <ul>
                         <li><a href="#features">Features</a></li>
                         <li><a href="#screenshots">Screenshots</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#download">Download</a></li>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                         <li><a href="terms-of-service.html">Terms of Service</a></li>
@@ -209,7 +311,6 @@
                     <h3>Contact Me</h3>
                     <p><i class="fas fa-envelope"></i> tharathip.kul@gmail.com</p>
                     <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/tharathip-kulchotirat-3b83791a7/" target="_blank">Tharathip Kulchotirat</a></p>
-                    <!-- <p><i class="fas fa-map-marker-alt"></i> 123 Dental Street, Suite 456, Medical City</p> -->
                 </div>
             </div>
             
@@ -219,6 +320,14 @@
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
     <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
 </body>
