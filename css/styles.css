@@ -460,7 +460,7 @@ header.sticky {
 
 .wave-shape {
   position: absolute;
-  bottom: -10px;
+  bottom: -100px;
   left: 0;
   width: 100%;
   line-height: 0;
@@ -647,6 +647,169 @@ header.sticky {
   background-color: var(--primary-color);
   width: 30px;
   border-radius: 5px;
+}
+
+/* Cloud Storage Integration Section */
+.cloud-storage {
+  background-color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.cloud-storage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.03) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 0;
+}
+
+.cloud-storage-container {
+  position: relative;
+  z-index: 1;
+}
+
+.cloud-storage-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.cloud-storage-content.reverse {
+  flex-direction: row-reverse;
+}
+
+.cloud-storage-text {
+  flex: 1;
+}
+
+.cloud-storage-text h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--primary-dark);
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.cloud-storage-text h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+  border-radius: 3px;
+}
+
+.cloud-storage-text p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  color: var(--text-color);
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.feature-list li i {
+  color: var(--primary-color);
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.cloud-storage-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rounded-image {
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  max-width: 100%;
+  transform: perspective(1000px) rotateY(5deg);
+}
+
+.cloud-storage-content.reverse .rounded-image {
+  transform: perspective(1000px) rotateY(-5deg);
+}
+
+.cloud-storage-image img:hover {
+  transform: scale(1.02) perspective(1000px) rotateY(0deg);
+  box-shadow: var(--hover-shadow);
+}
+
+@media (max-width: 992px) {
+  .cloud-storage-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .cloud-storage-content.reverse {
+    flex-direction: column;
+  }
+  
+  .cloud-storage-text, 
+  .cloud-storage-image {
+    width: 100%;
+  }
+  
+  .cloud-storage-text h3 {
+    font-size: 26px;
+  }
+  
+  .cloud-storage-text h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .cloud-storage-text {
+    text-align: center;
+  }
+  
+  .feature-list li {
+    justify-content: center;
+  }
+  
+  .rounded-image,
+  .cloud-storage-content.reverse .rounded-image {
+    transform: none;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cloud-storage-content {
+    margin-bottom: 60px;
+  }
+  
+  .cloud-storage-text h3 {
+    font-size: 24px;
+  }
+  
+  .cloud-storage-text p {
+    font-size: 16px;
+  }
+  
+  .rounded-image {
+    max-width: 100%;
+  }
 }
 
 /* Testimonials Section */
